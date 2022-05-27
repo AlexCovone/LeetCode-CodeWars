@@ -7,7 +7,7 @@ Complete the function to return true if the two arguments given are anagrams of 
 */
 
 function isAnagram(test, original){
-    let testArray = test.toLowerCase().split('').sort().join('')
-    let originalArray = original.toLowerCase().split('').sort().join('')
-    return testArray === originalArray
+    test = test.toLowerCase().split('').sort().join('')
+    original = original.toLowerCase().split('').sort().join('')
+    return test === original
 }
