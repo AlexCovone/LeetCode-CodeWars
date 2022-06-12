@@ -8,6 +8,5 @@ function uniqueInOrder(iterable){
             result.push(iterable[i])
         }    
     }
-
     return result
 }
