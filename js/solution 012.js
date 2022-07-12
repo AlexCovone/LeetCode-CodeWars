@@ -7,7 +7,7 @@ If the input is an empty array or is null, return an empty array.
 */
 
 function countPositivesSumNegatives(input) {
-    if(input === null || input.length = 0){
+    if(input === null || input.length === 0){
         return []
     }
 
