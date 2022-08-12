@@ -18,3 +18,7 @@ Inputs and the expected output will never exceed the signed 32-bit integer limit
 function sumTheStr(a,b) {
    return String(Number(a) + Number(b))
 }
+
+// Alternative
+
+const sumTheStr = (a, b) => String(Number(a) + Number(b))
