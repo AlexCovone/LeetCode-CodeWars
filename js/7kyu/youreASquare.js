@@ -22,5 +22,5 @@ var isSquare = function(n){
     }
   }
 
-// Alternative Method
+//Alternative Method
 const isSquare = n => Number.isInteger(Math.sqrt(n));
