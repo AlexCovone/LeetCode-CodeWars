@@ -15,4 +15,6 @@ I consistenly optimize my code for both readability and efficiency.
 
 ## Lessons Learned:
 
-Solving a problem everyday allows for me to presented with a unique problem daily. Utilizing my skillset, I attempt to create a solution with the best methodologies. Whether I can solve the problem initially or not, I am constantly looking at the solution manual and explanations for alternative solutions in an effort to further my knowledge. Through this I am able to learn new methodologies to implement in future projects and problems!
+Solving a problem everyday allows for me to be presented with a unique problem daily. Utilizing my skillset, I attempt to create a solution with the best methodologies. 
+
+Whether I can solve the problem initially or not, I am constantly looking at the solution manual and explanations for alternative solutions in an effort to further my knowledge. Through this I am able to learn new methodologies to implement in future projects and problems!
