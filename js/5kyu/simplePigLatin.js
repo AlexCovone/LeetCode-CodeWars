@@ -7,6 +7,12 @@ function pigIt(str){
     // Concatnate 
     return arrWord.map(element => {
         const firstLetter = element[0];
-        return element.slice(1) + firstLetter + 'ay'
+
+        // Check if the element is a punctuation to not concatnate
+        if(element === '?' || element === '.' || element === '!'){
+            return element
+        }else{
+            return element.slice(1) + firstLetter + 'ay'
+        }
     }).join(' ')
   }
