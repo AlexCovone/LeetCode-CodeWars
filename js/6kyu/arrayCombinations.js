@@ -6,6 +6,6 @@ For example: solve([[1,2],[4],[5,6]]) = 4, because it results in only 4 possibil
 Make sure that you don't count duplicates; for example solve([[1,2],[4,4],[5,6,6]]) = 4, since the extra outcomes are just duplicates.
 */
 
-function solve(arr) {
-    return arr.map(subArr => new Set(subArr).size).reduce((acc, c) => acc * c, 1)
+function solve(array) {
+    return array.map(subArr => new Set(subArr).size).reduce((acc, c) => acc * c, 1)
 };
