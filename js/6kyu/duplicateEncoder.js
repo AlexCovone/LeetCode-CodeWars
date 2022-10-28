@@ -28,7 +28,7 @@ function duplicateEncode(word){
     }).join('')
 }
 
-// Alternative
+// Alternative 2
 function duplicateEncode(str){
     return str.toLowerCase()
               .split('')
