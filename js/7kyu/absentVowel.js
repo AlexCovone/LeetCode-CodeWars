@@ -13,6 +13,7 @@ Examples
 "Bb Smith sent us six neatly arranged range bicycles"  =>  3  ; missing: "o"
 */
 
+
 function absentVowel(x){
     //list vowels -> loop each vowel and see if vowel is in str
     const vowels = 'aeiou'
