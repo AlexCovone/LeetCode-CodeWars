@@ -4,9 +4,9 @@ Write a function that accepts two integers and returns the remainder of dividing
 Division by zero should return NaN.
 */
 
-function remainder(n, m){
-    let min = Math.min(n, m)
-    let max = Math.max(n, m)
+function remainder(a, b){
+    let min = Math.min(a, b)
+    let max = Math.max(a, b)
 
     if(min === 0){return NaN}
     return max % min
