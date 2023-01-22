@@ -1,5 +1,5 @@
 # CodeWars Challenges: <a href="https://www.codewars.com/users/AlexCovone" target="_blank" rel="noopener noreferrer">Visit Here</a>
-A repository filled with codewars challenges (kata). Each week I push 5+ solutions of varying difficulty to maintain and develop problem solving abilities. 
+A repository filled with Codewars challenges (kata). Each week I push 5+ solutions of varying difficulty to maintain and develop problem solving abilities. 
 
 
 ![alt tag](/codeWarsScreenShot.png)
