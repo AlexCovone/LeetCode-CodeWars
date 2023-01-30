@@ -6,4 +6,4 @@ For example, if n = 111, then nearest\_sq(n) (nearestSq(n)) equals 121, since 11
 If the n is already the perfect square (e.g. n = 144, n = 81, etc.), you need to just return n.
 */
 
-const nearestSq = n => Math.pow(Math.round(Math.sqrt(n)), 2);
+const nearestSq = n => Math.pow(Math.round(Math.sqrt(n)), 2)
