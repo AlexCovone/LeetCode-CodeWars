@@ -22,7 +22,7 @@ function isVow(a){
     return result
 }
 
-// Alternative
+// Alternative Method
 
 const isVow = a =>{
     let map = {
