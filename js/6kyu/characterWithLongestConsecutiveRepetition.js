@@ -10,12 +10,11 @@ For empty string return:
 */
 
 function longestRepetition(s) { 
-    let count = 0;
-    let longestCount = 0;
+    let count = 0; 
+    let longestCount = 0; 
     let currentChar = ''; 
     let longestChar = ''; 
 
-    let hashmap = {};
   
     for (let i = 0; i < s.length; i++) {
       if (s[i] !== currentChar) { 
@@ -29,10 +28,7 @@ function longestRepetition(s) {
         longestCount = count;
         longestChar = currentChar;
       }
-  
-      if (!hashmap[currentChar]) {
-        hashmap[currentChar] = count;
-      }
+
     }
   
     return [longestChar, longestCount];
