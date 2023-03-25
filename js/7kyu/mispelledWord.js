@@ -13,11 +13,6 @@ This can include an extra char at the end or the beginning of either of words.
 In the tests that expect true, the mispelled word will always differ mostly by one character. If the two words are the same, return True.
 */
 
-var mispelled = function(word1, word2){
-    if(word1 === word2){return true}
-    if(word1.length === word2.length || word1.length === word2.length + 1 || word1.length === word2.length - 1){return true}
-}
-
 function mispelled(word1, word2) {
     if(Math.abs(word1.length - word2.length) >= 2){
       return false;
