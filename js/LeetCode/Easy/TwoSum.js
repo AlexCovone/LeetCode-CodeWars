@@ -23,7 +23,7 @@ function twoSum(nums, target) {
 
 function twoSum(nums, target) {
   // create hashmap
-  // store property as num and index
+  // store property as num:index
   const hashmap = {};
 
   // loop through nums arr
@@ -31,11 +31,12 @@ function twoSum(nums, target) {
     const currentValue = nums[i];
     const neededValue = target - currentValue;
 
+    // checks if hashmap has neededValue already - if so, return two indices in array format
     if (hashmap.hasOwnProperty(neededValue)) {
       return [i, hashmap[neededValue]];
     }
 
-    // checks if value exist in hashmap
+    // checks if value does not exist in hashmap
     if (!hashmap[currentValue]) {
       hashmap[currentValue] = i;
     }
