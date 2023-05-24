@@ -7,4 +7,40 @@ function isValidWalk(walk) {
     const west = walk.filter(element => {return element === 'w'}).length;
 
     return walk.length === 10 && north === south && east === west
+}
+
+// Alternative with one loop
+function isValidWalk(walk) {
+  // Check if the walk will take exactly 10 minutes
+  if (walk.length !== 10) {
+    return false;
   }
+  
+  // Track the position of the walk
+  let x = 0; // horizontal position
+  let y = 0; // vertical position
+  
+  // Process each step of the walk
+  for (let i = 0; i < walk.length; i++) {
+    const direction = walk[i];
+    
+    // Update the position based on the direction
+    switch (direction) {
+      case 'n':
+        y++;
+        break;
+      case 's':
+        y--;
+        break;
+      case 'e':
+        x++;
+        break;
+      case 'w':
+        x--;
+        break;
+    }
+  }
+  
+  // Check if the walk ends at the starting point
+  return x === 0 && y === 0;
+}
