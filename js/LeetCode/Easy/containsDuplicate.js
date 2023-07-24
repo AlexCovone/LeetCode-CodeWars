@@ -23,11 +23,17 @@ function containsDuplicate(nums){
 }
 
 // Alternative using Sets
+// Time Complexity - O(n)
+// Space Complexity - O(n)
 function containsDuplicates(nums){
     const numsSet = new Set(nums)
     const isEqual = numsSet.size === nums.length
 
     return !isEqual
+}
+
+var containsDuplicate = function(nums) {
+  return nums.length !== new Set(nums).size
 }
 
 
