@@ -13,38 +13,30 @@
 
 // no division operator, achieve in O(n) time complexity
 
-// prefix && suffix approach
+// Space Complexity O(1)
 
 var productExceptSelf = function (nums) {
-  const n = nums.length;
+  // Initialize an array to store the final result
+  const result = [];
 
-  // Initialize two arrays to store the product of elements to the left and right of each index.
-  // ex: n = 3 -> [1, 1, 1]
-  const leftProducts = new Array(n).fill(1);
-  const rightProducts = new Array(n).fill(1);
+  // Initialize variables to keep track of prefix and postfix products
+  let prefix = 1; // Prefix product of elements to the left of the current index
+  let postfix = 1; // Postfix product of elements to the right of the current index
 
-  // Calculate the product of elements to the left of each index.
-  let productSoFar = 1;
-  for (let i = 0; i < n; i++) {
-    leftProducts[i] = productSoFar;
-    productSoFar *= nums[i];
+  // Calculate prefix products
+  for (let i = 0; i < nums.length; i++) {
+    result[i] = prefix; // Store the prefix product in the result array
+    prefix *= nums[i]; // Update prefix product for the next element
   }
 
-  // Calculate the product of elements to the right of each index.
-  // start loop at last element, go down until zero index
-  productSoFar = 1;
-  for (let i = n - 1; i >= 0; i--) {
-    rightProducts[i] = productSoFar;
-    productSoFar *= nums[i];
+  // Calculate postfix products and multiply with prefix products
+  for (let i = nums.length - 2; i >= 0; i--) {
+    postfix *= nums[i + 1]; // Update postfix product for the next element
+    result[i] *= postfix; // Multiply prefix and postfix products to get final result
   }
 
-  // Calculate the final answer array by multiplying the corresponding elements from left and right arrays.
-  const answer = [];
-  for (let i = 0; i < n; i++) {
-    answer[i] = leftProducts[i] * rightProducts[i];
-  }
-
-  return answer;
+  // Return the array with the product of elements except self
+  return result;
 };
 
 // nums = [1, 2, 3, 4] -> return [24, 12, 8, 6]
