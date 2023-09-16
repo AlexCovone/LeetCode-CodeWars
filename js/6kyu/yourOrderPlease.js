@@ -10,22 +10,12 @@
 // 0 < num < 10
 // return type:string => words sorted, num dictates position in string
 
-function order(words) {
-  // Convert string to arr - each word = element
-  const wordArr = words.split(' ');
+function order(words){
+    // create helper function - takes word, find num as type:string, convert to type:number
+    const numerate = word => word.split('').find(char => Number.isInteger(+char))
 
-  // create hashmap to store word:num
-  const hashmap = {};
-
-  // iterate through words - use num in word as value pair
-  for (const word of words) {
-    console.log(parseInt(word))
-    hashmap[word] = parseInt(word);
-  }
-
-  const sortedWords = wordArr.sort((a, b) => hashmap[a] - hashmap[b]);
-
-  return sortedWords.join(' ')
+    // turn str of words into arr of words => sort using helper function, asc order, join arr to string
+    return words.split(' ').sort((a, b) => numerate(a) - numerate(b)).join(' ')
 }
 
 // "is2 Thi1s T4est 3a" => "Thi1s is2 3a T4est"
