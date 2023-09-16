@@ -1,5 +1,5 @@
 # CodeWars Challenges: <a href="https://www.codewars.com/users/AlexCovone" target="_blank" rel="noopener noreferrer">Visit Here</a>
-A repository filled with Codewars challenges (kata). Each week I push 5+ solutions of varying difficulty to maintain and develop problem-solving abilities. 
+A repository filled with LeetCode and Codewars challenges (kata). Each week I push 5+ solutions of varying difficulty to maintain and develop problem-solving abilities. 
 
 
 ![alt tag](/codeWarsScreenShot.png)
@@ -8,7 +8,7 @@ A repository filled with Codewars challenges (kata). Each week I push 5+ solutio
 
 **Tech used:** JavaScript, TypeScript
 
-The first thing I do every day is solve a CodeWars problem! Utilizing JavaScript, each problem presents a set of instructions that must be followed in pursuit of the desired solution.
+The first thing I do every day is solve a LeetCode or CodeWars problem! Utilizing JavaScript and/or TypeScript, each problem presents a set of instructions that must be followed in pursuit of the desired solution.
 
 ## Optimizations
 I consistently optimize my code for both readability and efficiency. 
