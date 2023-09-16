@@ -38,4 +38,3 @@ function high(x) {
 // R - highest scoring word (str), score based on letter position in alphabet - a = 1, b = 2 ... (if two words score same, return earlier one)
 // E - 'what time are we climing up the volcano' => 'volcano' = 70: 'v' = 22, 'o' = 15, 'c' = 3, 'a' = 1, 'n' = 14, 'o' = 15
 // P - letters assigned value (loop?), split str into individual words => split words into individual letters, accumulate letter values for word total, compare word total and return largest val word
-

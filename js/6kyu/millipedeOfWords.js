@@ -43,7 +43,43 @@ function canCombineWords(words) {
     
     return false;
   }
+
+
+  import { getImageUrl } from './utils.js';
+
+  function Avatar({ person, size }) {
   
+    let thumbnailSize = 's'
+    if(size > 90){
+      thumbnailSize = 'b'
+    }
+    
+    return (
+      <img
+        className="avatar"
+        src={getImageUrl(person, thumbnailSize)}
+        alt={person.name}
+        width={size}
+        height={size}
+      />
+    );
+  }
+  
+  export default function Profile() {
+    return (
+      <Avatar
+        size={40}
+        person={{ 
+          name: 'Gregorio Y. Zara', 
+          imageId: '7vQD0fP'
+        }}
+      />
+    );
+  }
+  
+  
+
+
 
 // P - array of words (str)
 // R - boolean value if all words in the array can be combined into one word - last letter of one word and first letter of next must be same 

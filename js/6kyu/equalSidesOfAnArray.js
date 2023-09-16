@@ -45,7 +45,7 @@ function findEvenIndex(arr){
 
     for(let i = 0; i < arr.length; i++){
         if(i === 0){
-            right = arr.slice(1).reduce((acc, c) => acc + c, 0) // Same as: right = arr.slice(1).reduce((acc, c) => acc + c, 0)
+            right = arr.slice(1).reduce((acc, c) => acc + c, 0) 
             if(right === i){
                 return i;
             }

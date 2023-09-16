@@ -12,6 +12,7 @@
 
 function order(words){
     // create helper function - takes word, find num as type:string, convert to type:number
+    // look for first char that +char converts into a number - check with Number.isInteger()
     const numerate = word => word.split('').find(char => Number.isInteger(+char))
 
     // turn str of words into arr of words => sort using helper function, asc order, join arr to string
@@ -25,3 +26,4 @@ function order(words){
 console.log(order('is2 Thi1s T4est 3a'), 'Thi1s is2 3a T4est');
 console.log(order('4of Fo1r pe6ople g3ood th5e the2'), 'Fo1r the2 g3ood 4of th5e pe6ople');
 console.log(order(''), '');
+

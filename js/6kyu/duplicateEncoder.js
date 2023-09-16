@@ -53,3 +53,4 @@ function duplicateEncode(str) {
     .map((letter, index, array) => (array.indexOf(letter) === array.lastIndexOf(letter) ? '(' : ')'))
     .join('');
 }
+
