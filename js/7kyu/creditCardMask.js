@@ -5,11 +5,31 @@ Your task is to write a function maskify, which changes all but the last four ch
 */
 
 function maskify(cc) {
-    cc = cc.split('');
+  cc = cc.split('');
 
-    for(let i = 0; i < cc.length - 4; i++){
-        cc[i] = '#'
-    }
+  for (let i = 0; i < cc.length - 4; i++) {
+    cc[i] = '#';
+  }
 
-    return cc.join('')
+  return cc.join('');
+}
+
+// Alternative for readability
+
+function maskify(str) {
+  // Check if the string is empty or has a length of 1
+  if (str.length <= 1) {
+    return str;
+  }
+
+  // Extract the last four characters of the string
+  const lastFourCharacters = str.slice(-4);
+
+  // Create a string of '#' characters with a length equal to (str.length - 4)
+  const maskedPart = '#'.repeat(str.length - 4);
+
+  // Concatenate the masked part with the last four characters
+  const maskedString = maskedPart + lastFourCharacters;
+
+  return maskedString;
 }
