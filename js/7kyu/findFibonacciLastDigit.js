@@ -15,14 +15,32 @@ function getLastDigit(index) {
     const value2 = fibonacciSequence[i - 2];
 
     // store only last digit in array - extract last digit using mod 10
-    const nextLastDigit = (value1 + value2) % 10
-    
-    fibonacciSequence.push(nextLastDigit)
+    const nextLastDigit = (value1 + value2) % 10;
+
+    fibonacciSequence.push(nextLastDigit);
   }
 
   const lastDigit = fibonacciSequence[index];
 
   return lastDigit;
+}
+
+// Optimize for space complexity
+function getLastDigit(index) {
+  if (index <= 1) {
+    return index;
+  }
+
+  let prev = 0;
+  let current = 1;
+
+  for (let i = 2; i <= index; i++) {
+    const next = (prev + current) % 10;
+    prev = current;
+    current = next;
+  }
+
+  return current;
 }
 
 // 15 => fib num = 610 => return 0
