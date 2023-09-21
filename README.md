@@ -2,7 +2,7 @@
 A repository filled with LeetCode and Codewars challenges (kata). Each week I push 5+ solutions of varying difficulty to maintain and develop problem-solving abilities. 
 
 
-![alt tag](/codeWarsScreenShot.png)
+<img width="1168" alt="Screenshot 2023-09-19 at 17 57 56" src="https://github.com/AlexCovone/LeetCode-CodeWars/assets/98838825/4caff57f-78e8-4771-b1ff-bef6eb21bf25">
 
 ## How It's Made:
 
