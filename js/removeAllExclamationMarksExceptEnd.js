@@ -7,7 +7,7 @@
 // return string type:string - exclamation removed, except at end of string
 
 function remove(string) {
-  return string.split('!').join('') + '!';
+  return string.split("!").join("") + "!";
 }
 
 // 'Hi!' => 'Hi!'
@@ -17,9 +17,9 @@ function remove(string) {
 // 'Hi! Hi!' => 'Hi Hi!'
 // 'Hi' => 'Hi!'
 
-console.log(remove('Hi!'), 'Hi!');
-console.log(remove('Hi!!!'), 'Hi!');
-console.log(remove('!Hi'), 'Hi!');
-console.log(remove('!Hi!'), 'Hi!');
-console.log(remove('Hi! Hi!'), 'Hi!');
-console.log(remove('Hi'), 'Hi!');
+console.log(remove("Hi!"), "Hi!");
+console.log(remove("Hi!!!"), "Hi!");
+console.log(remove("!Hi"), "Hi!");
+console.log(remove("!Hi!"), "Hi!");
+console.log(remove("Hi! Hi!"), "Hi!");
+console.log(remove("Hi"), "Hi!");
