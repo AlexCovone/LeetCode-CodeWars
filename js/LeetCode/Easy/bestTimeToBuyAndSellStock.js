@@ -31,6 +31,7 @@ var maxProfit = function (prices) {
     const currentValue = prices[i];
 
     // reassign minPrice to be the minimum price between what is currently stored and the current iterative
+    // currentValue - minPrice calculates the potential profit if we were to buy the stock at the minPrice and sell it at the currentValue.
     minPrice = Math.min(minPrice, currentValue);
 
     // reassign max profit to be the max value between max profit variable or the difference between the current iterative and minimum price
