@@ -25,7 +25,7 @@ var sortPeople = function (names, heights) {
   const result = [];
 
   // sort heights arr
-  heights.sort((a, b) => b - a);
+  heights = heights.sort((a, b) => b - a);
 
   // append map[height] (name) to array in desc order
   for (let height of heights) {
