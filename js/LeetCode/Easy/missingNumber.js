@@ -12,7 +12,7 @@
 // nums.length === n
 
 var missingNumber = function (nums) {
-    // declare n
+    // declare n => n === nums.length
     const n = nums.length
 
     // use Gauss' Trick - lastItem * (lastItem + 1) / 2
@@ -20,6 +20,7 @@ var missingNumber = function (nums) {
 
     const actualSum = nums.reduce((acc, c) => acc + c, 0)
 
+    // find difference between total expected sum and actual sum to finding missing number
     return expectedSum - actualSum
 };
 
