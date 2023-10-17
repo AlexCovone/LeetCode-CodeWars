@@ -6,7 +6,7 @@ A repository filled with LeetCode and Codewars challenges (kata). Each week I pu
 
 ## How It's Made:
 
-**Tech used:** JavaScript, TypeScript, Python
+**Tech used:** JavaScript, TypeScript
 
 The first thing I do every day is solve a LeetCode or CodeWars problem! Utilizing JavaScript and/or TypeScript, each problem presents a set of instructions that must be followed in pursuit of the desired solution.
 
