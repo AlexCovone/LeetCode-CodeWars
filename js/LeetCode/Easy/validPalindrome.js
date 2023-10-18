@@ -11,9 +11,9 @@ function isPalindrome(s) {
     return true;
   }
 
-  //   Remove any non-alphanumeric characters
-  const alphanumericChars = "abcdefghijklmnopqrstuvwxyz0123456789";
-  let result = "";
+  // Remove any non-alphanumeric characters
+  const alphanumericChars = 'abcdefghijklmnopqrstuvwxyz0123456789';
+  let result = '';
 
   for (let i = 0; i < s.length; i++) {
     const char = s[i].toLowerCase();
@@ -22,11 +22,11 @@ function isPalindrome(s) {
     }
   }
 
-  const reverse = result.split("").reverse().join("");
+  const reverse = result.split('').reverse().join('');
 
   return result === reverse;
 }
 
-console.log(isPalindrome("A man, a plan, a canal: Panama"), true);
-console.log(isPalindrome("race a car"), false);
-console.log(isPalindrome(" "), true);
+console.log(isPalindrome('A man, a plan, a canal: Panama'), true);
+console.log(isPalindrome('race a car'), false);
+console.log(isPalindrome(' '), true);
