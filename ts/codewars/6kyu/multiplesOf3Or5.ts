@@ -7,7 +7,7 @@
 // ----
 
 // arg: number
-// positive or negative
+// can be positive or negative
 
 // return sum: number of multiples of 3 or 5
 // if number is multiple of both 3 and 5, count only once
